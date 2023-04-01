@@ -1,0 +1,129 @@
+.headeer {
+    color: white;
+    font-size: 50px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem ;
+}
+
+.topContent {
+    background-color: #CFFDE1;
+    width: 300px;
+    height: 120px; 
+    display: grid;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    justify-self: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputText {
+    width: 190px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: #68B984;
+    border: 0px solid rgb(100, 100, 100);
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    transition: .3s;
+}
+
+.inputText::placeholder {
+    font-size: 17px;
+    color: #1e2c2c;
+    text-align: center;
+    opacity: .7;
+}
+
+.inputText:focus {
+    outline: 0;
+    box-shadow: #FED049 0px 0px 0.25em, #FED049 0px 0.25em 1em;
+}
+
+.submitButton {
+    width: 45px;
+    height: 45px;
+    align-self: center;
+    background-color: #FED049;
+    color: rgb(23, 23, 23);
+    font-family: monospace;
+    border-radius: 15px;
+    border: 0;
+}
+
+.error {
+    color: red;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.wellcomeBlock {
+    justify-content: center;
+    text-align: center;
+}
+
+.bottomContent {
+    width: 100%;
+}
+
+.ulCity{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width :700px ) {
+    .headeer {
+        font-size: 80px;
+    }
+    .topContent {
+        background-color: #CFFDE1;
+        width: 380px;
+        height: 150px; 
+    }
+    .inputText {
+        width: 220px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+    
+    .inputText::placeholder {
+        font-size: 20px;
+    }
+    .submitButton {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    .submitButton img {
+        width: 30px;
+    }
+    .ulCity{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
