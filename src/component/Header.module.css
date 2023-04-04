@@ -1,7 +1,7 @@
 .headeer {
     color: white;
     font-size: 50px;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -13,13 +13,14 @@
 
 .topContent {
     background-color: #CFFDE1;
-    width: 300px;
-    height: 120px; 
+    width: 290px;
+    height: 100px; 
     display: grid;
     justify-content: center;
-    border-radius: 15px;
-    margin-bottom: 2rem;
+    border-radius: 18px;
+    margin-bottom: 4.5rem;
     justify-self: center;
+    position: relative;
 }
 
 .content {
@@ -30,20 +31,20 @@
 }
 
 .inputText {
-    width: 190px;
+    width: 160px;
     height: 45px;
     margin-right: 10px;
     background-color: #68B984;
     border: 0px solid rgb(100, 100, 100);
     border-radius: 15px;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     transition: .3s;
 }
 
 .inputText::placeholder {
-    font-size: 17px;
+    font-size: 16px;
     color: #1e2c2c;
     text-align: center;
     opacity: .7;
@@ -63,14 +64,33 @@
     font-family: monospace;
     border-radius: 15px;
     border: 0;
+    cursor: pointer;
 }
 
 .error {
-    color: red;
+    background-color: #fe4949;
+    color: #ffffff;
+    padding: 4px 5px;
+    border-radius: 5px;
     margin-top: .5rem;
     text-align: center;
-    font-size: 20px;
-    font-family: sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: -30px;
+    animation: animate .2s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        scale: 1.2;
+    }
+    100% {
+        opacity: 100%;
+        scale: 1;
+    }
 }
 
 .wellcomeBlock {
@@ -89,7 +109,7 @@
     margin-bottom: 5rem;
 }
 
-@media screen and (min-width :700px ) {
+@media screen and (min-width :850px ) {
     .headeer {
         font-size: 80px;
     }
@@ -117,12 +137,22 @@
     .submitButton img {
         width: 30px;
     }
+    .error {
+        margin-top: .5rem;
+        font-size: 18px;
+        bottom: -35px;
+    }
     .ulCity{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         row-gap: 1rem;
         column-gap: 1rem;
-        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width :1200px ){
+    .ulCity{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
