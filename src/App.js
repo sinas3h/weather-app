@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-import Header from './component/Header';
-// import City from './component/City';
+import React from 'react';
+import Landing from './component/Landing';
 
-class App extends Component {
-  
-  state = {
-    add :[]
-  }
-  render() {
+
+const App = () => {
     return (
       <div>
-        <Header />
+        <Landing />
       </div>
     );
   }
-}
 
 export default App;

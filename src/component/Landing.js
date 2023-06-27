@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import style from "./Header.module.css";
+import style from "./Landing.module.css";
 import axios from "axios";
 import City from "./City";
 import searchSvg from "../image/search-normal.svg";
 
-const Header = () => {
+const Landing = () => {
   const [input, setInput] = useState("");
 
   const [dataWeather, setData] = useState([]);
@@ -41,7 +41,7 @@ const Header = () => {
         setError("");
       })
       .catch(() => {
-        setError("Location not found");
+        setError("Location not found!");
       });
   };
   console.log(dataWeather);
@@ -94,4 +94,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Landing;

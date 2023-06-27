@@ -3,10 +3,10 @@
     background-color: #46bc74;
     width: 300px;
     height: 120px;
-    padding: .8rem;
+    padding: 1rem;
     border-radius: 18px;
     display: grid;
-    grid-template-columns: 43% 25% 32%;
+    grid-template-columns: 45% 20% 35%;
     grid-template-rows: 30% 70%;
     column-gap: 10px;
     animation: identifier .2s linear forwards;
@@ -26,11 +26,9 @@
 .cityName {
     font-size: 22px;
     font-weight: 200;
-    /* margin-left: 30px; */
     color: white;
-    justify-self: center;
+    justify-self: self-start;
     align-self: center;
-    /* flex-grow: 2; */
 }
 
 .countryName {
@@ -40,42 +38,47 @@
     border-radius: 50px;
     font-weight: 600;
     font-size: 12px;
-    justify-self: start;
+    justify-self: self-start;
     align-self: center;
 
 }
 
 .temprature {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     color: #0f1616;
-    /* margin-left: 30px; */
-    /* margin-top: -10px; */
-    justify-self: center;
-    align-self: center;
-    /* flex-grow: 4; */
+    position: relative;
+    width: fit-content;
+    justify-self: self-start;
 }
 
-.deg{
-    font-size: 35px;
-    position: relative;
-    bottom: 30px;
-    opacity: .8;
-    
+.temprature span:nth-child(1) {
+    font-size: 30px;
+    top: 0;
+    right: -15px;
+    position: absolute;
 }
+
+.temprature span:nth-child(2) {
+    font-size: 30px;
+    bottom: 30px;
+    right: -25px;
+    position: absolute;
+}
+
 
 .icon1 {
-    justify-self: end;
-    margin-top: -10px;
-    margin-right: 10px;
+   justify-self: end;
 }
 
 
 .desc {
-    font-size: 14px;
+    font-size: 15px;
     color: #1e2c2c;
     opacity: .9;
     letter-spacing: 1.4px;
+    justify-self: self-start;
+    width: min-content;
 }
 
 .delete {
@@ -92,11 +95,11 @@
     stroke: #FED049;
 }
 
-@media screen and (min-width :850px ) {
+@media screen and (min-width :650px ) {
     .city {
-        width: 340px;
+        width: 380px;
         height: 140px;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 15px;
     }
     .cityName {
@@ -112,15 +115,23 @@
         font-size: 85px;
     }
     
-    .icon1 {
-        justify-self: end;
-        margin-top: -10px;
-        margin-right: 10px;
-    }
-    
     
     .desc {
         font-size: 17px;
+    }
+
+    .temprature span:nth-child(1) {
+        font-size: 35px;
+        top: 0;
+        right: -15px;
+        position: absolute;
+    }
+    
+    .temprature span:nth-child(2) {
+        font-size: 40px;
+        bottom: 20px;
+        right: -30px;
+        position: absolute;
     }
     
 }

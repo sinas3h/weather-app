@@ -10,7 +10,7 @@ const City = (props) => {
       <figure className={style.icon1}>
         <img className={style.icon} src={props.icon} alt="city" />
       </figure>
-      <p className={style.temprature}>{props.temp}</p>
+      <p className={style.temprature}>{props.temp}<span>°</span><span>c</span></p>
       <p className={style.desc}>{props.desc}</p>
       <span
       className={style.delete}
