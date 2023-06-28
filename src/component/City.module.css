@@ -3,10 +3,10 @@
     background-color: #46bc74;
     width: 300px;
     height: 120px;
-    padding: 1rem;
+    padding: .8rem;
     border-radius: 18px;
     display: grid;
-    grid-template-columns: 45% 20% 35%;
+    grid-template-columns: 45% 15% 40%;
     grid-template-rows: 30% 70%;
     column-gap: 10px;
     animation: identifier .2s linear forwards;
@@ -24,11 +24,11 @@
 }
 
 .cityName {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 200;
     color: white;
-    justify-self: self-start;
-    align-self: center;
+    justify-self: center;
+    align-self: self-end;
 }
 
 .countryName {
@@ -39,7 +39,7 @@
     font-weight: 600;
     font-size: 12px;
     justify-self: self-start;
-    align-self: center;
+    align-self: self-end;
 
 }
 
@@ -49,7 +49,8 @@
     color: #0f1616;
     position: relative;
     width: fit-content;
-    justify-self: self-start;
+    justify-self: center;
+    align-self: center;
 }
 
 .temprature span:nth-child(1) {
@@ -61,14 +62,14 @@
 
 .temprature span:nth-child(2) {
     font-size: 30px;
-    bottom: 30px;
+    bottom: 10px;
     right: -25px;
     position: absolute;
 }
 
 
 .icon1 {
-   justify-self: end;
+   justify-self: center;
 }
 
 
@@ -78,12 +79,14 @@
     opacity: .9;
     letter-spacing: 1.4px;
     justify-self: self-start;
+    align-self: self-start;
+    margin-top: .5rem;
     width: min-content;
 }
 
 .delete {
     position: absolute;
-    right: 25px;
+    right: 15px;
     bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -103,7 +106,7 @@
         border-radius: 15px;
     }
     .cityName {
-        font-size: 24px;
+        font-size: 26px;
     }
     
     .countryName {
@@ -129,10 +132,14 @@
     
     .temprature span:nth-child(2) {
         font-size: 40px;
-        bottom: 20px;
+        bottom: 10px;
         right: -30px;
         position: absolute;
     }
+
+    .icon1 img {
+        width: 130px;
+     }
     
 }
 
